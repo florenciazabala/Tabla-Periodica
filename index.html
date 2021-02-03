@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    
+</head>
+<body>
+    
+    <article>
+        <section>
+            <img src="imagenes/1.svg" alt="" width="10%" id="imagenElemento">
+        </section>
+        
+        <!--<object data="imagenes/TABLA PERIODICA4.svg" type="image/svg+xml" id="tabla"></object>-->
+        <!--<object id="svgholder" data="imagenes/TABLA PERIODICA3.svg" type="image/svg+xml"></object>-->
+        
+        <svg data-src="imagenes/TABLA PERIODICA4.svg" version="1.1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xlink="https://www.w3.org/TR/SVG/types.html" x="0px" y="0px" viewBox="0 0 1388 992"
+        style="enable-background:new 0 0 1388 992;" xml:space="preserve" id="tp" onload="init(event)">
+          <script>
+                function init(evt) {
+                    let svgDocument = evt.target.ownerDocument;
+                    let svgRoot = svgDocument.documentElement;
+                    mostrarElemento();
+                }
+
+                function mostrarElemento(){
+                    const $imagenElemento = document.querySelector('#imagenElemento');
+                    console.log("abc");
+                    $(document).ready(function(){
+                        $('#box > g').click(function(){
+                            let $idElemento = $(this).attr('id');
+                            $imagenElemento.src= "imagenes/"+$idElemento+".svg";
+                            console.log($idElemento);
+                        })
+                    });
+                
+                }
+          </script>
+        </svg>
+        
+        
+        <!--<img src="imagenes/TABLA PERIODICA4.svg" alt="" width="75%">-->
+
+    </article>
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/pruebas.js"></script>
+    
+</body>
+</html>
