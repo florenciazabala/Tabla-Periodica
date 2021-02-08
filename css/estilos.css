@@ -11,3 +11,62 @@ body{
     margin-top: 1rem;
     width: 9rem;
 }
+
+#grupos{
+    margin-left: 2rem;
+    margin-top: 3rem;
+    font-size: 9px;
+}
+ 
+.caracterMetalico{
+    margin-left: -2rem;
+}
+.caracterMetalico:checked + span:after {
+    border: 2px solid #000000;
+    background-color: #000000;
+  }
+#metalesAlcalinosTerreos:checked + span:after {
+  border: 2px solid #b2ebf2;
+  background-color: #b2ebf2;
+}
+#metalesAlcalinos:checked + span:after {
+    border: 2px solid #81d4fa;
+    background-color: #81d4fa;
+}
+#metalesTransicion:checked + span:after {
+    border: 2px solid #b2dfdb;
+    background-color: #b2dfdb;
+}
+#metalesPobres:checked + span:after {
+    border: 2px solid #dcedc8;
+    background-color: #dcedc8;
+}
+#metaloides:checked + span:after {
+    border: 2px solid #f8bbd0;
+    background-color: #f8bbd0;
+}
+#noMetales:checked + span:after {
+    border: 2px solid #ffcdd2;
+    background-color: #ffcdd2;
+}
+#halogenos:checked + span:after {
+  border: 2px solid #ffee93;
+  background-color: #ffee93;
+}
+ 
+#gasesNobles:checked + span:after {
+  border: 2px solid #FDC479;
+  background-color: #FDC479;
+}
+#lantanidos:checked + span:after {
+    border: 2px solid #8c9eff;
+    background-color: #8c9eff;
+}
+#actinidos:checked + span:after {
+    border: 2px solid #d1c4e9;
+    background-color: #d1c4e9;
+}
+
+
+.a {fill:#FDC479;}
+

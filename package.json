@@ -1,0 +1,22 @@
+{
+  "name": "proyecto-quimica",
+  "version": "1.0.0",
+  "description": "Tabla periodica interactiva",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/florenciazabala/Tabla-Periodica.git"
+  },
+  "author": "Florenica Zabala",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/florenciazabala/Tabla-Periodica/issues"
+  },
+  "homepage": "https://github.com/florenciazabala/Tabla-Periodica#readme",
+  "dependencies": {
+    "materialize-css": "^1.0.0-rc.2"
+  }
+}
